@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manjunath G K — Java SDE & Systems Developer</title>
+  <meta name="description" content="Portfolio of Manjunath G K. Focused on Spring Boot backend engineering, database architectures, and high-concurrency systems.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- DYNAMIC GRID BACKDROP -->
+  <div class="grid-overlay"></div>
+
+  <!-- MOBILE HEADER & DRAWER -->
+  <header class="mobile-header">
+    <a href="#home" class="logo">mgk<span>.sde</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <div class="mobile-drawer" id="mobileDrawer">
+    <a href="#about">Profile</a>
+    <a href="#skills">Bento Toolkit</a>
+    <a href="#projects">Build Archives</a>
+    <a href="#experience">Ledger Timeline</a>
+    <a href="#certificates">Credentials Registry</a>
+  </div>
+
+  <!-- FLOATING BOTTOM PILL DOCK -->
+  <nav class="nav-dock">
+    <a href="#home" class="dock-item active" data-tooltip="Core System">
+      <svg viewBox="0 0 24 24"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    </a>
+    <a href="#about" class="dock-item" data-tooltip="About Profile">
+      <svg viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    </a>
+    <a href="#skills" class="dock-item" data-tooltip="Bento Toolkit">
+      <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+    </a>
+    <a href="#projects" class="dock-item" data-tooltip="Build Archives">
+      <svg viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+    </a>
+    <a href="#experience" class="dock-item" data-tooltip="Timeline logs">
+      <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+    </a>
+    <a href="#certificates" class="dock-item" data-tooltip="Credentials Shelf">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+    </a>
+  </nav>
+
+  <main>
+    <!-- ================= HERO SECTION ================= -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-left">
+          <div class="hero-header-row">
+            <div class="role-badge">Java SDE / Backend Developer</div>
+            <a href="assets/certificates/Manjunth_G_K.pdf" download class="btn-resume">
+              <svg style="width: 14px; height: 14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              <span>Resume.pdf</span>
+            </a>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I am <br>Manjunath <span class="highlight">G K</span>
+          </h1>
+
+          <div style="font-family: var(--font-mono); font-size: 1.15rem; color: var(--accent); margin-bottom: 12px; font-weight: 700;">
+            &gt; <span id="typewriter">Java Backend Developer</span>
+          </div>
+
+          <p class="hero-desc">
+            I build high-performance, concurrent <strong>Java backends</strong>, secure relational database schemas, and robust API endpoints. Focused on clean microservice design, JPA persistence, and systems scaling.
+          </p>
+
+          <div class="hero-contact-bar">
+            <a href="mailto:manjunathgk146@gmail.com" class="hero-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>
+              <span>manjunathgk146@gmail.com</span>
+            </a>
+            <a href="tel:+918618545293" class="hero-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
+              <span>+91 86185 45293</span>
+            </a>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary">View Archives</a>
+            <a href="#contact" class="btn-secondary">Let's Connect</a>
+          </div>
+
+          <div class="hero-social-links">
+            <a href="https://github.com/Manjunath-G-K" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://linkedin.com/in/manjunath-g-k-040813354" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a href="https://leetcode.com/manjunathgk024" target="_blank" rel="noopener">LeetCode ↗</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <!-- Rectangular biometric video block -->
+          <div class="biometric-card">
+            <div class="biometric-img-wrapper">
+              <div class="biometric-corner top-left"></div>
+              <div class="biometric-corner top-right"></div>
+              <div class="biometric-corner bottom-left"></div>
+              <div class="biometric-corner bottom-right"></div>
+              <video id="introVideo" src="assets/Step_Generate_a_Talking_A.mp4" autoplay loop muted playsinline class="biometric-video"></video>
+              <button id="videoMuteBtn" class="video-control-btn" aria-label="Unmute introduction audio">
+                <svg class="mute-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <line x1="23" y1="9" x2="17" y2="15"></line>
+                  <line x1="17" y1="9" x2="23" y2="15"></line>
+                </svg>
+                <svg class="volume-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="biometric-footer">
+              <div class="biometric-row">
+                <span>IDENTITY VALIDATED</span>
+                <span class="status-active">ONLINE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT PROFILE ================= -->
+    <section id="about" class="section border-top">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="sec-subtitle">01 / Profile</span>
+          <h2 class="sec-title">Personal Biography</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-left">
+            <p>
+              I am a systems developer specializing in designing robust <strong>Java SDE backends</strong>, transactional SQL tables, and secure web microservices. Currently completing my Computer Science & Engineering degree at <strong>UBDT College of Engineering, Davanagere</strong> (cumulative GPA 8.8).
+            </p>
+            <p>
+              During my tenure as a Java Stack Intern at <strong>Infosys SpringBoard</strong>, I developed CarbonLite—a carbon accounting system. I mapped database entity relations in strict 3NF database layout models, layered Spring Security filters using JSON Web Tokens (JWT), and optimized persistent entity joins.
+            </p>
+            <p>
+              Dedicated to writing clean, maintainable systems code, automating deployment scripts, and tuning relational query parameters.
+            </p>
+          </div>
+
+          <div class="about-right">
+            <div class="info-grid">
+              <div class="info-block">
+                <h4>Academics</h4>
+                <p>B.E. CSE @ UBDTCE (Class of 2027)</p>
+              </div>
+              <div class="info-block">
+                <h4>Core Stack</h4>
+                <p>Java, Spring Boot, JPA, MySQL</p>
+              </div>
+              <div class="info-block">
+                <h4>Professional</h4>
+                <p>Java SDE Intern @ Infosys</p>
+              </div>
+              <div class="info-block">
+                <h4>CGPA Index</h4>
+                <p>Current Standing: 8.8 CGPA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BENTO TOOLKIT ================= -->
+    <section id="skills" class="section border-top">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="sec-subtitle">02 / Specifications</span>
+          <h2 class="sec-title">Systems Toolkit</h2>
+          <p class="sec-intro">Bento board mapping programming languages, backend frameworks, databases, and build workflows.</p>
+        </div>
+
+        <div class="bento-grid">
+          <div class="bento-card">
+            <div class="bento-icon-wrapper">
+              <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" /></svg>
+            </div>
+            <h3>Languages</h3>
+            <div class="bento-tags">
+              <span>Java 8/17/21</span>
+              <span>Python 3</span>
+              <span>SQL</span>
+              <span>JavaScript</span>
+              <span>C</span>
+            </div>
+          </div>
+
+          <div class="bento-card wide">
+            <div class="bento-icon-wrapper">
+              <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
+            </div>
+            <h3>Core Frameworks</h3>
+            <div class="bento-tags">
+              <span>Spring Boot</span>
+              <span>Spring Security &amp; JWT</span>
+              <span>Spring Data JPA / Hibernate</span>
+              <span>Flask (Python)</span>
+              <span>React.js</span>
+              <span>Tailwind CSS</span>
+            </div>
+          </div>
+
+          <div class="bento-card wide">
+            <div class="bento-icon-wrapper">
+              <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+            </div>
+            <h3>Databases &amp; Cache</h3>
+            <div class="bento-tags">
+              <span>MySQL</span>
+              <span>PostgreSQL</span>
+              <span>Redis Cache</span>
+              <span>Amazon DynamoDB</span>
+              <span>H2 Database</span>
+              <span>SQLite</span>
+            </div>
+          </div>
+
+          <div class="bento-card">
+            <div class="bento-icon-wrapper">
+              <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3>Workflows</h3>
+            <div class="bento-tags">
+              <span>Git &amp; GitHub</span>
+              <span>Docker</span>
+              <span>Maven</span>
+              <span>Postman API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="section border-top">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="sec-subtitle">03 / Build Repositories</span>
+          <h2 class="sec-title">Featured Projects</h2>
+          <p class="sec-intro">Query backend microservices, encryption validators, and AWS automation structures.</p>
+        </div>
+
+        <div class="projects-filter-bar" style="display: flex; gap: 10px; margin-bottom: 32px; flex-wrap: wrap;">
+          <button class="filter-btn active" data-filter="all">All Modules</button>
+          <button class="filter-btn" data-filter="java">Java SDE</button>
+          <button class="filter-btn" data-filter="cloud">Cloud / ML / Desktop</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid-container">
+          <!-- Project 1: Real-time Ingestion -->
+          <div class="project-card" data-tech="java">
+            <div class="project-header">
+              <div class="project-icon-wrapper">
+                <svg style="width: 28px; height: 28px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>
+              </div>
+              <a href="https://github.com/Manjunath-G-K/real-time-log-monitoring" class="project-link-icon" target="_blank" rel="noopener">
+                <span>GitHub ↗</span>
+              </a>
+            </div>
+            <h3>Real-Time Log Ingestion</h3>
+            <p class="project-desc">
+              A full-stack, real-time log ingestion and monitoring system. Logs are securely sent via REST, masked for PII data (emails, phone numbers) in memory, and broadcast live via WebSockets.
+            </p>
+            <div class="arch-blueprint">
+              <div class="arch-title">LOG VERIFICATION PIPELINE</div>
+              <div class="arch-flow">
+                <div class="arch-node">Client Logs</div>
+                <svg class="flow-arrow-svg" viewBox="0 0 18 8"><path d="M0 4h14" class="flow-line" /></svg>
+                <div class="arch-node">AES Masker</div>
+                <svg class="flow-arrow-svg" viewBox="0 0 18 8"><path d="M0 4h14" class="flow-line" /></svg>
+                <div class="arch-node">WebSocket</div>
+              </div>
+            </div>
+            <div class="project-tech-tags">
+              <span>Java 17</span><span>Spring Boot</span><span>WebSockets</span><span>AES</span>
+            </div>
+          </div>
+
+          <!-- Project 2: CarbonLite -->
+          <div class="project-card" data-tech="java">
+            <div class="project-header">
+              <div class="project-icon-wrapper">
+                <svg style="width: 28px; height: 28px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zM6 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3z" /></svg>
+              </div>
+              <a href="https://github.com/Manjunath-G-K/carbonlite" class="project-link-icon" target="_blank" rel="noopener">
+                <span>GitHub ↗</span>
+              </a>
+            </div>
+            <h3>CarbonLite Tracker</h3>
+            <p class="project-desc">
+              Personal carbon footprint tracking application built during Infosys SpringBoard 6.0. Features user calculation engines, daily carbon logs, badge tracking, and database records storage.
+            </p>
+            <div class="arch-blueprint">
+              <div class="arch-title">CREDENTIAL PIPELINE</div>
+              <div class="arch-flow">
+                <div class="arch-node">Audit Input</div>
+                <svg class="flow-arrow-svg" viewBox="0 0 18 8"><path d="M0 4h14" class="flow-line" /></svg>
+                <div class="arch-node">JWT Filter</div>
+                <svg class="flow-arrow-svg" viewBox="0 0 18 8"><path d="M0 4h14" class="flow-line" /></svg>
+                <div class="arch-node">MySQL 3NF</div>
+              </div>
+            </div>
+            <div class="project-tech-tags">
+              <span>Java 17</span><span>Spring Boot</span><span>MySQL</span><span>Spring Security</span>
+            </div>
+          </div>
+
+          <!-- Project 3: Finance API -->
+          <div class="project-card" data-tech="java">
+            <div class="project-header">
+              <div class="project-icon-wrapper">
+                <svg style="width: 28px; height: 28px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></svg>
+              </div>
+              <a href="https://github.com/Manjunath-G-K/finance-backend" class="project-link-icon" target="_blank" rel="noopener">
+                <span>GitHub ↗</span>
+              </a>
+            </div>
+            <h3>Finance Backend API</h3>
+            <p class="project-desc">
+              Layered Spring Boot API for managing financial records. Implements custom Role-Based Access Control (RBAC) with VIEWER, ANALYST, and ADMIN permissions.
+            </p>
+            <div class="arch-blueprint">
+              <div class="arch-title">DATA VALIDATION FLOW</div>
+              <div class="arch-flow">
+                <div class="arch-node">REST Endpt</div>
+                <svg class="flow-arrow-svg" viewBox="0 0 18 8"><path d="M0 4h14" class="flow-line" /></svg>
+                <div class="arch-node">JPA Entity</div>
+                <svg class="flow-arrow-svg" viewBox="0 0 18 8"><path d="M0 4h14" class="flow-line" /></svg>
+                <div class="arch-node">H2 DB</div>
+              </div>
+            </div>
+            <div class="project-tech-tags">
+              <span>Spring Boot 3</span><span>Spring Data JPA</span><span>H2 Database</span><span>Swagger</span>
+            </div>
+          </div>
+
+          <!-- Project 4: FileGuard X -->
+          <div class="project-card" data-tech="cloud">
+            <div class="project-header">
+              <div class="project-icon-wrapper">
+                <svg style="width: 28px; height: 28px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="3" x2="9" y2="21"/></svg>
+              </div>
+              <a href="https://github.com/Manjunath-G-K/file-integrity-system" class="project-link-icon" target="_blank" rel="noopener">
+                <span>GitHub ↗</span>
+              </a>
+            </div>
+            <h3>FileGuard X</h3>
+            <p class="project-desc">
+              Cloud-based file integrity verification system. Uploads files to Amazon S3, computes SHA-256 integrity fingerprints, and stores metadata securely in DynamoDB.
+            </p>
+            <div class="arch-blueprint">
+              <div class="arch-title">SECURE CLOUD STORAGE</div>
+              <div class="arch-flow">
+                <div class="arch-node">Upload File</div>
+                <svg class="flow-arrow-svg" viewBox="0 0 18 8"><path d="M0 4h14" class="flow-line" /></svg>
+                <div class="arch-node">AWS S3</div>
+                <svg class="flow-arrow-svg" viewBox="0 0 18 8"><path d="M0 4h14" class="flow-line" /></svg>
+                <div class="arch-node">DynamoDB</div>
+              </div>
+            </div>
+            <div class="project-tech-tags">
+              <span>Python</span><span>Flask</span><span>AWS S3</span><span>DynamoDB</span>
+            </div>
+          </div>
+
+          <!-- Project 5: FakeGuard Pro -->
+          <div class="project-card" data-tech="cloud">
+            <div class="project-header">
+              <div class="project-icon-wrapper">
+                <svg style="width: 28px; height: 28px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>
+              </div>
+              <a href="https://github.com/Manjunath-G-K/Fake_news_detect" class="project-link-icon" target="_blank" rel="noopener">
+                <span>GitHub ↗</span>
+              </a>
+            </div>
+            <h3>FakeGuard Pro</h3>
+            <p class="project-desc">
+              An NLP-based machine learning pipeline that vectorizes article content using TF-IDF features and uses Logistic Regression to classify articles as real or fake.
+            </p>
+            <div class="arch-blueprint">
+              <div class="arch-title">NLP CLASSIFICATION FLOW</div>
+              <div class="arch-flow">
+                <div class="arch-node">Article Text</div>
+                <svg class="flow-arrow-svg" viewBox="0 0 18 8"><path d="M0 4h14" class="flow-line" /></svg>
+                <div class="arch-node">TF-IDF Vector</div>
+                <svg class="flow-arrow-svg" viewBox="0 0 18 8"><path d="M0 4h14" class="flow-line" /></svg>
+                <div class="arch-node">Logistic Reg</div>
+              </div>
+            </div>
+            <div class="project-tech-tags">
+              <span>Python</span><span>Scikit-learn</span><span>Streamlit</span><span>Pandas</span>
+            </div>
+          </div>
+
+          <!-- Project 6: StudyMate Pro -->
+          <div class="project-card" data-tech="cloud">
+            <div class="project-header">
+              <div class="project-icon-wrapper">
+                <svg style="width: 28px; height: 28px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="4"/><line x1="8" y1="2" x2="8" y2="4"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </div>
+              <a href="https://github.com/Manjunath-G-K/StudyMate-Pro" class="project-link-icon" target="_blank" rel="noopener">
+                <span>GitHub ↗</span>
+              </a>
+            </div>
+            <h3>StudyMate Pro</h3>
+            <p class="project-desc">
+              A desktop task manager and Pomodoro productivity timer application. Supports customized focus session durations, break tracking, and task checklists.
+            </p>
+            <div class="arch-blueprint">
+              <div class="arch-title">DESKTOP TASK RUNTIME</div>
+              <div class="arch-flow">
+                <div class="arch-node">Pomodoro Clock</div>
+                <svg class="flow-arrow-svg" viewBox="0 0 18 8"><path d="M0 4h14" class="flow-line" /></svg>
+                <div class="arch-node">CustomTkinter</div>
+                <svg class="flow-arrow-svg" viewBox="0 0 18 8"><path d="M0 4h14" class="flow-line" /></svg>
+                <div class="arch-node">Checklist UI</div>
+              </div>
+            </div>
+            <div class="project-tech-tags">
+              <span>Python</span><span>CustomTkinter</span><span>Tkinter</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WORK LEDGER ================= -->
+    <section id="experience" class="section border-top">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="sec-subtitle">04 / Ledger Timeline</span>
+          <h2 class="sec-title">Work Experience</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">Nov 2025 – Jan 2026</span>
+              <h3 class="timeline-role">Java Stack Developer Intern</h3>
+              <h4 class="timeline-company">Infosys SpringBoard</h4>
+              <ul class="timeline-bullets">
+                <li>Developed modular carbon footprints computation engines on the CarbonLite project.</li>
+                <li>Configured robust Spring Security filters, BCrypt secure hashing, and REST API controllers.</li>
+                <li>Completed comprehensive certifications in database normalization (3NF), object relations mapping (JPA), and algorithms.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2025 – Present</span>
+              <h3 class="timeline-role">Open Source Contributor</h3>
+              <h4 class="timeline-company">Systems &amp; Database Builder</h4>
+              <ul class="timeline-bullets">
+                <li>Created real-time log streaming components with WebSockets PII scrubbing layers.</li>
+                <li>Constructed anti-tamper files hashes logging nodes using AWS S3 and DynamoDB index queries.</li>
+                <li>Qualified for national hackathon rounds (SIH 2025, AI-RENA 2.0, Utkarsh 2K26).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ACHIEVEMENTS ================= -->
+    <section id="achievements" class="section border-top">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="sec-subtitle">05 / Competitive Records</span>
+          <h2 class="sec-title">Hackathon Achievements</h2>
+        </div>
+
+        <div class="marquee-container">
+          <div class="marquee-track">
+            <!-- Card 1 -->
+            <div class="achieve-card">
+              <div class="achieve-header">
+                <span class="achieve-round-tag">Round 2 Participant</span>
+                <span class="achieve-platform">SIH 2025</span>
+              </div>
+              <h3 class="achieve-title">Smart India Hackathon</h3>
+              <span class="achieve-sub">Ministry of Education, Govt. of India</span>
+              <p class="achieve-desc">
+                Qualified for the final rounds. Designed robust schema models and distributed microservice routes for state-level optimization challenges.
+              </p>
+              <div class="achieve-footer">
+                <span>Govt. of India</span>
+                <span>2025</span>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="achieve-card">
+              <div class="achieve-header">
+                <span class="achieve-round-tag">ML Participant</span>
+                <span class="achieve-platform">AI-RENA</span>
+              </div>
+              <h3 class="achieve-title">AI-RENA 2.0 Hackathon</h3>
+              <span class="achieve-sub">Live 12-Hour ML Competition</span>
+              <p class="achieve-desc">
+                Implemented and trained complex regression algorithms and data filtering models on massive dynamic benchmark testing files.
+              </p>
+              <div class="achieve-footer">
+                <span>UBDTCE CSE</span>
+                <span>2026</span>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="achieve-card">
+              <div class="achieve-header">
+                <span class="achieve-round-tag">SDE Participant</span>
+                <span class="achieve-platform">Utkarsh</span>
+              </div>
+              <h3 class="achieve-title">Utkarsh 2K26 Sprint</h3>
+              <span class="achieve-sub">24-Hour SDE &amp; APIs Challenge</span>
+              <p class="achieve-desc">
+                Built concurrent Java REST endpoints, relational tables, and cached data filters in a 24-hour live code sprint.
+              </p>
+              <div class="achieve-footer">
+                <span>CSE Symposium</span>
+                <span>2026</span>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="achieve-card">
+              <div class="achieve-header">
+                <span class="achieve-round-tag">Java Participant</span>
+                <span class="achieve-platform">Code League</span>
+              </div>
+              <h3 class="achieve-title">College Coding League</h3>
+              <span class="achieve-sub">Java &amp; Algorithms Tournament</span>
+              <p class="achieve-desc">
+                Solved multi-threaded execution challenges, synchronization monitors, locks, and complex database schema joins ahead of schedule.
+              </p>
+              <div class="achieve-footer">
+                <span>UBDTCE</span>
+                <span>2025</span>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="achieve-card">
+              <div class="achieve-header">
+                <span class="achieve-round-tag">Internship Graduate</span>
+                <span class="achieve-platform">Infosys</span>
+              </div>
+              <h3 class="achieve-title">CarbonLite Capstone Award</h3>
+              <span class="achieve-sub">Green SDE Capstone Project</span>
+              <p class="achieve-desc">
+                Commended by mentors for architecting secure REST API modules, Spring JWT filters, and relational structures in 3NF layout.
+              </p>
+              <div class="achieve-footer">
+                <span>Infosys Springboard</span>
+                <span>2026</span>
+              </div>
+            </div>
+
+            <!-- DUPLICATED ENTRIES FOR SEAMLESS MARQUEE LOOP -->
+            <!-- Card 1 Duplicate -->
+            <div class="achieve-card">
+              <div class="achieve-header">
+                <span class="achieve-round-tag">Round 2 Participant</span>
+                <span class="achieve-platform">SIH 2025</span>
+              </div>
+              <h3 class="achieve-title">Smart India Hackathon</h3>
+              <span class="achieve-sub">Ministry of Education, Govt. of India</span>
+              <p class="achieve-desc">
+                Qualified for the final rounds. Designed robust schema models and distributed microservice routes for state-level optimization challenges.
+              </p>
+              <div class="achieve-footer">
+                <span>Govt. of India</span>
+                <span>2025</span>
+              </div>
+            </div>
+
+            <!-- Card 2 Duplicate -->
+            <div class="achieve-card">
+              <div class="achieve-header">
+                <span class="achieve-round-tag">ML Participant</span>
+                <span class="achieve-platform">AI-RENA</span>
+              </div>
+              <h3 class="achieve-title">AI-RENA 2.0 Hackathon</h3>
+              <span class="achieve-sub">Live 12-Hour ML Competition</span>
+              <p class="achieve-desc">
+                Implemented and trained complex regression algorithms and data filtering models on massive dynamic benchmark testing files.
+              </p>
+              <div class="achieve-footer">
+                <span>UBDTCE CSE</span>
+                <span>2026</span>
+              </div>
+            </div>
+
+            <!-- Card 3 Duplicate -->
+            <div class="achieve-card">
+              <div class="achieve-header">
+                <span class="achieve-round-tag">SDE Participant</span>
+                <span class="achieve-platform">Utkarsh</span>
+              </div>
+              <h3 class="achieve-title">Utkarsh 2K26 Sprint</h3>
+              <span class="achieve-sub">24-Hour SDE &amp; APIs Challenge</span>
+              <p class="achieve-desc">
+                Built concurrent Java REST endpoints, relational tables, and cached data filters in a 24-hour live code sprint.
+              </p>
+              <div class="achieve-footer">
+                <span>CSE Symposium</span>
+                <span>2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LIBRARY BOOKSHELF ================= -->
+    <section id="certificates" class="section border-top">
+      <div class="section-container">
+        <div class="section-header" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px;">
+          <div>
+            <span class="sec-subtitle">06 / Credentials Registry</span>
+            <h2 class="sec-title">Interactive Bookshelf</h2>
+            <p class="sec-intro">Hover/Click a book spine to pull it from the shelf and load the document onto the reading desk.</p>
+          </div>
+        </div>
+
+        <div class="library-container">
+          <!-- The Bookshelf Board -->
+          <div class="bookshelf-section">
+            <div class="books-grid">
+              <!-- Book 1 -->
+              <div class="book-spine-card" data-file="assets/certificates/infosys-internship-6.0.pdf" data-title="Internship 6.0 — Carbon Footprint App" data-org="Infosys" data-date="Issued: Mar 2026" data-color="terracotta">
+                <div class="book-spine">
+                  <div class="spine-title">Infosys Internship 6.0</div>
+                  <div class="spine-tag">SDE CAPSTONE</div>
+                </div>
+              </div>
+
+              <!-- Book 2 -->
+              <div class="book-spine-card" data-file="assets/certificates/amigoscode-spring-boot.pdf" data-title="Spring Boot for Beginners" data-org="Amigoscode" data-date="Issued: 2025" data-color="sage">
+                <div class="book-spine">
+                  <div class="spine-title">Spring Boot Begin</div>
+                  <div class="spine-tag">SPRING CORE</div>
+                </div>
+              </div>
+
+              <!-- Book 3 -->
+              <div class="book-spine-card" data-file="assets/certificates/scaler-java-concurrency.pdf" data-title="Java Concurrency & Multithreading" data-org="Scaler" data-date="Issued: 2025" data-color="gold">
+                <div class="book-spine">
+                  <div class="spine-title">Java Concurrency</div>
+                  <div class="spine-tag">MULTITHREADING</div>
+                </div>
+              </div>
+
+              <!-- Book 4 -->
+              <div class="book-spine-card" data-file="assets/certificates/infosys-java-foundation.pdf" data-title="Java Foundation Certification" data-org="Infosys" data-date="Issued: Oct 2025" data-color="navy">
+                <div class="book-spine">
+                  <div class="spine-title">Java Foundation</div>
+                  <div class="spine-tag">JVM CORE</div>
+                </div>
+              </div>
+
+              <!-- Book 5 -->
+              <div class="book-spine-card" data-file="assets/certificates/infosys-dsa-java.pdf" data-title="Data Structures & Algorithms using Java" data-org="Infosys" data-date="Issued: Sep 2025" data-color="plum">
+                <div class="book-spine">
+                  <div class="spine-title">Data Structures</div>
+                  <div class="spine-tag">DSA JAVA</div>
+                </div>
+              </div>
+
+              <!-- Book 6 -->
+              <div class="book-spine-card" data-file="assets/certificates/infosys-dbms.pdf" data-title="Database Management System" data-org="Infosys" data-date="Issued: Sep 2025" data-color="terracotta">
+                <div class="book-spine">
+                  <div class="spine-title">DBMS Normalization</div>
+                  <div class="spine-tag">SQL DATABASE</div>
+                </div>
+              </div>
+
+              <!-- Book 7 -->
+              <div class="book-spine-card" data-file="assets/certificates/infosys-software-engineering.pdf" data-title="Software Engineering & Agile Development" data-org="Infosys" data-date="Issued: Nov 2025" data-color="sage">
+                <div class="book-spine">
+                  <div class="spine-title">Software Engineering</div>
+                  <div class="spine-tag">AGILE SCRUM</div>
+                </div>
+              </div>
+
+              <!-- Book 8 -->
+              <div class="book-spine-card" data-file="assets/certificates/intel-ai-for-all.png" data-title="AI For All" data-org="Intel / CBSE" data-date="Issued: 2025" data-color="gold">
+                <div class="book-spine">
+                  <div class="spine-title">Intel AI For All</div>
+                  <div class="spine-tag">DEEP LEARNING</div>
+                </div>
+              </div>
+
+              <!-- Book 9 -->
+              <div class="book-spine-card" data-file="assets/certificates/tcs-ion-career-edge.pdf" data-title="Career Edge — Young Professional" data-org="TCS iON" data-date="Issued: 2025" data-color="navy">
+                <div class="book-spine">
+                  <div class="spine-title">TCS iON Career Edge</div>
+                  <div class="spine-tag">SOFT SKILLS</div>
+                </div>
+              </div>
+            </div>
+            <!-- Simple black shelf ledger line -->
+            <div class="bookshelf-wood"></div>
+          </div>
+
+          <!-- Reading Desk Preview Panel -->
+          <div class="reading-desk-section">
+            <div class="reading-desk-inner" style="display: flex; flex-direction: column; height: 100%;">
+              <div class="reading-desk-header">
+                <span id="deskOrg" class="desk-org-badge">System</span>
+                <h3 id="deskTitle">Select a book spine to pull it from the library shelf</h3>
+                <p id="deskDate" class="desk-date">Click/Hover to preview credential details</p>
+              </div>
+              <div class="desk-preview-body">
+                <div class="desk-spinner" id="deskSpinner" style="display: none;"></div>
+                <div class="desk-preview-container" id="deskPreview">
+                  <div class="desk-placeholder-text">
+                    <span>📖 Reading Desk Viewer</span>
+                    <p style="font-size: 0.82rem; color: var(--text-light); margin-top: 8px;">Select a book from the left shelf. The document will be pulled and loaded onto this desk.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="reading-desk-actions">
+                <a href="#" id="deskDownload" download class="btn-primary" style="display: none; text-decoration: none;">Download Credential</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section border-top">
+      <div class="section-container contact-container">
+        <div class="contact-left">
+          <span class="sec-subtitle">07 / Contact</span>
+          <h2 class="sec-title">Let's build systems together</h2>
+          <p class="sec-intro">
+            I am currently open to Java SDE, systems developer, and backend engineering internship opportunities. Let's arrange a call!
+          </p>
+
+          <div class="contact-details-card">
+            <!-- Email -->
+            <div class="contact-card-item">
+              <div class="detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>
+              </div>
+              <div class="detail-text">
+                <span class="detail-label">Email Address</span>
+                <span class="interactive-copy" id="emailVal">manjunathgk146@gmail.com</span>
+                <span class="copy-success-tooltip" id="copyTooltip">Copy to Clipboard</span>
+              </div>
+            </div>
+
+            <!-- Mobile -->
+            <div class="contact-card-item">
+              <div class="detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
+              </div>
+              <div class="detail-text">
+                <span class="detail-label">Mobile Number</span>
+                <a href="tel:+918618545293" class="detail-link">+91 86185 45293</a>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-card-item">
+              <div class="detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
+              </div>
+              <div class="detail-text">
+                <span class="detail-label">Current Location</span>
+                <span class="detail-val">Davanagere, Karnataka, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <!-- API DISPATCH PORTAL -->
+          <div class="biometric-card" style="max-width: 100%; width: 100%;">
+            <h3 style="font-family: var(--font-display); font-weight: 900; font-size: 1.3rem; margin-bottom: 8px;">Interactive API Dispatcher</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 16px;">
+              Compile the inquiry JSON payload to automatically prepare connection parameters.
+            </p>
+
+            <div class="api-info-panel">
+              <div><span class="verb">POST</span>https://api.mgk.dev/v1/inquiry</div>
+              <div class="api-headers">Headers: Content-Type: application/json</div>
+            </div>
+
+            <textarea id="mailJsonOutput" rows="5" readonly class="api-textarea">{
+  "sender": "Recruiter / Visitor",
+  "subject": "Internship Inquiry",
+  "body": "Hi Manjunath, I saw your portfolio and would like to discuss SDE / SWE internship opportunities with your team."
+}</textarea>
+
+            <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px;">
+              <button class="filter-btn active" id="btn-tmpl-intern" style="font-size: 0.68rem; padding: 6px 12px;">Internship</button>
+              <button class="filter-btn" id="btn-tmpl-job" style="font-size: 0.68rem; padding: 6px 12px;">SDE Role</button>
+              <button class="filter-btn" id="btn-tmpl-net" style="font-size: 0.68rem; padding: 6px 12px;">Networking</button>
+            </div>
+
+            <a href="mailto:manjunathgk146@gmail.com?subject=SDE%20Internship%20Inquiry%20-%20Manjunath%20G%20K"
+              id="connectionMailBtn" class="btn-primary" style="width: 100%; justify-content: center; gap: 8px;">
+              <span>Dispatch Request</span>
+              <svg style="width: 14px; height: 14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px;">
+        <div>
+          <a href="#home" class="footer-logo">mgk<span>.sde</span></a>
+          <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 4px;">Java Developer &amp; Systems Engineer</p>
+        </div>
+        <div style="display: flex; gap: 16px; font-size: 0.78rem;">
+          <a href="#about">Profile</a>
+          <a href="#skills">Bento</a>
+          <a href="#projects">Archives</a>
+          <a href="#experience">Timeline</a>
+          <a href="#certificates">Credentials</a>
+          <a href="console.html" style="color: var(--accent);">Terminal CLI</a>
+        </div>
+        <div style="text-align: right; font-size: 0.75rem; color: var(--text-light);">
+          <p>&copy; 2026 Manjunath G K. All Rights Reserved.</p>
+          <p style="font-size: 0.68rem; margin-top: 2px;">B.E. Computer Science @ UBDTCE · Davanagere</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- DYNAMIC MOBILE OVERLAY MODAL -->
+  <div id="certModal" class="modal" style="display: none;">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content-wrapper">
+      <div class="modal-header">
+        <div class="modal-title-info">
+          <span id="modalOrg" class="modal-org-badge">Credential</span>
+          <h3 id="modalTitle">Verified Certificate</h3>
+        </div>
+        <button id="modalClose" class="btn-modal-close" aria-label="Close Preview">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-spinner" id="modalSpinner"></div>
+        <div class="modal-preview-container" id="modalPreview"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+  <script src="certificates.js" defer></script>
+</body>
+</html>

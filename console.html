@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Terminal CLI — Manjunath G K</title>
+  <meta name="description" content="Interactive retro-futuristic terminal CLI portfolio of Manjunath G K. Parse commands to inspect developer profiles.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- BACKGROUND ELEMENTS -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- FLOATING COMMAND DOCK -->
+  <nav class="nav-dock">
+    <a href="index.html" class="dock-item" data-tooltip="Dashboard Hub">
+      <svg viewBox="0 0 24 24"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    </a>
+    <a href="index.html#about" class="dock-item" data-tooltip="About Profile">
+      <svg viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    </a>
+    <a href="index.html#skills" class="dock-item" data-tooltip="Bento Toolkit">
+      <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+    </a>
+    <a href="index.html#projects" class="dock-item" data-tooltip="Build Archives">
+      <svg viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+    </a>
+    <a href="certificates.html" class="dock-item" data-tooltip="Credentials Vault">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+    </a>
+    <a href="console.html" class="dock-item active terminal-btn" data-tooltip="Terminal CLI">
+      <svg viewBox="0 0 24 24" stroke="currentColor" fill="none"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+    </a>
+  </nav>
+
+  <!-- MOBILE HEADER -->
+  <header class="mobile-header">
+    <a href="index.html" class="logo">mgk<span>.console</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <a href="index.html">Dashboard</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#skills">Bento Toolkit</a>
+    <a href="index.html#projects">Build Archives</a>
+    <a href="certificates.html">Credentials</a>
+    <a href="console.html" style="color: var(--accent);">Terminal CLI</a>
+  </div>
+
+  <main style="padding-top: 100px; padding-bottom: 120px;">
+    <section style="padding: 20px 0;">
+      <div class="section-header" style="margin-bottom: 30px;">
+        <span class="sec-subtitle">Interactive Environment</span>
+        <h2 class="sec-title" style="font-size: 2.2rem;">Systems Control Console</h2>
+        <p class="sec-intro" style="font-size: 0.95rem;">Execute system commands to query developer repositories, credentials, or trigger environmental overlays.</p>
+      </div>
+
+      <!-- TERMINAL CLI WIDGET -->
+      <div class="terminal-screen" id="terminalScreen">
+        <!-- Matrix Digital Rain Canvas overlay -->
+        <canvas class="matrix-canvas-overlay" id="matrixCanvas"></canvas>
+
+        <div class="terminal-header">
+          <div class="terminal-indicators">
+            <span class="terminal-dot-indicator red"></span>
+            <span class="terminal-dot-indicator yellow"></span>
+            <span class="terminal-dot-indicator green"></span>
+          </div>
+          <div>MANJUNATH_SDE_NODE // SESSION_0x80F2</div>
+        </div>
+
+        <div class="terminal-logs" id="terminalLogs">
+          <div class="terminal-line warning">Initializing Systems Core Security handshake...</div>
+          <div class="terminal-line warning">Mapping local volumes and environment dependencies...</div>
+          <div class="terminal-line mint">Connection secure. Local host: 127.0.0.1:8080 online.</div>
+          <div class="terminal-line output">========================================================</div>
+          <div class="terminal-line cyan" style="font-weight: bold;">
+███╗   ███╗ ██████╗ ██╗  ██╗    ██████╗ ███████╗██╗   ██╗
+████╗ ████║██╔════╝ ██║  ██║    ██╔══██╗██╔════╝██║   ██║
+██╔████╔██║██║  ███╗███████║    ██║  ██║█████╗  ██║   ██║
+██║╚██╔╝██║██║   ██║██╔══██║    ██║  ██║██╔══╝  ╚██╗ ██╔╝
+██║ ╚═╝ ██║╚██████╔╝██║  ██║    ██████╔╝███████╗ ╚████╔╝ 
+╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝    ╚═════╝ ╚══════╝  ╚═══╝  
+          </div>
+          <div class="terminal-line output">========================================================</div>
+          <div class="terminal-line output">Welcome to Manjunath's command dashboard. Version 1.4.0.</div>
+          <div class="terminal-line output">Type <span class="cyan">help</span> to view available control directives.</div>
+          <br>
+        </div>
+
+        <div class="terminal-input-wrapper">
+          <span class="terminal-prompt-symbol">mgk@sde:~$</span>
+          <input type="text" class="terminal-input-field" id="terminalInput" autofocus autocomplete="off" spellcheck="false" placeholder="Enter command...">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px;">
+        <div>
+          <a href="index.html" class="footer-logo">mgk<span>.console</span></a>
+          <p style="font-size: 0.78rem; color: var(--text-light); margin-top: 4px;">Developer Systems Control Console</p>
+        </div>
+        <div style="text-align: right; font-size: 0.75rem; color: var(--text-light);">
+          <p>&copy; 2026 Manjunath G K. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+  <script src="console.js" defer></script>
+</body>
+</html>
